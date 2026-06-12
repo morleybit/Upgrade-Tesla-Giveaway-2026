@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Upgrade Tesla Giveaway 2026</title>
-<meta name="description" content="Enter the Upgrade Tesla Giveaway for free! Win a brand new Tesla Model 3, Model Y, Cybertruck, Model X, or Model S. Open to all US residents. No purchase necessary.">
+<title>EV Giveaway 2026</title>
+
+<meta name="description" content="Enter EV Giveaway 2026 for free and join our independent electric vehicle community giveaway experience. Terms and eligibility apply.">
+
 <style>
 *{
     margin:0;
@@ -12,37 +14,46 @@
     box-sizing:border-box;
     font-family:Arial,sans-serif;
 }
+
 body{
     background:#08111f;
     color:#fff;
     padding:20px;
 }
+
 .container{
     max-width:700px;
     margin:auto;
 }
+
 .header{
     text-align:center;
     margin-bottom:25px;
 }
+
 .header h1{
     font-size:42px;
     margin-bottom:10px;
 }
+
 .green{
     color:#57ff9b;
 }
+
 .header p{
     color:#b5b5b5;
 }
+
 .contact-info{
     text-align:center;
     color:#b5b5b5;
     margin-bottom:25px;
 }
+
 .contact-info p{
     margin:5px 0;
 }
+
 .badge{
     display:inline-block;
     padding:10px 15px;
@@ -52,6 +63,7 @@ body{
     margin-bottom:20px;
     font-weight:bold;
 }
+
 .countdown{
     display:flex;
     justify-content:center;
@@ -59,6 +71,7 @@ body{
     margin:20px 0;
     flex-wrap:wrap;
 }
+
 .countdown-item{
     background:#1c2940;
     border-radius:12px;
@@ -66,15 +79,18 @@ body{
     min-width:70px;
     text-align:center;
 }
+
 .number{
     font-size:2rem;
     font-weight:bold;
     color:#57ff9b;
 }
+
 .label{
     font-size:.75rem;
     color:#b5b5b5;
 }
+
 .card{
     background:#111d32;
     border-radius:20px;
@@ -82,15 +98,18 @@ body{
     margin-bottom:20px;
     box-shadow:0 5px 20px rgba(0,0,0,.3);
 }
+
 .card h2{
     color:#57ff9b;
     margin-bottom:20px;
 }
+
 .car-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:15px;
 }
+
 .car-option{
     background:#1c2940;
     border-radius:12px;
@@ -99,13 +118,16 @@ body{
     cursor:pointer;
     border:2px solid transparent;
 }
+
 .car-option:hover{
     border-color:#57ff9b;
 }
+
 .car-option.selected{
     border-color:#57ff9b;
     background:#143321;
 }
+
 .car-option img{
     width:100%;
     height:120px;
@@ -113,14 +135,17 @@ body{
     border-radius:8px;
     margin-bottom:10px;
 }
+
 .car-name{
     font-weight:bold;
 }
+
 .car-desc{
     font-size:12px;
     color:#b5b5b5;
     margin-top:5px;
 }
+
 label{
     display:block;
     margin-top:15px;
@@ -128,6 +153,7 @@ label{
     color:#b5b5b5;
     font-weight:bold;
 }
+
 input,select{
     width:100%;
     padding:15px;
@@ -136,13 +162,16 @@ input,select{
     background:#1c2940;
     color:#fff;
 }
+
 .row{
     display:flex;
     gap:10px;
 }
+
 .row div{
     flex:1;
 }
+
 button{
     width:100%;
     padding:18px;
@@ -155,9 +184,11 @@ button{
     cursor:pointer;
     margin-top:20px;
 }
+
 button:hover{
     opacity:.9;
 }
+
 .success{
     display:none;
     background:#143321;
@@ -167,99 +198,134 @@ button:hover{
     margin-top:20px;
     text-align:center;
 }
+
 .disclaimer{
     color:#b5b5b5;
     font-size:13px;
     line-height:1.6;
 }
+
 @media(max-width:600px){
     .header h1{
         font-size:32px;
     }
+
     .car-grid{
         grid-template-columns:1fr;
     }
+
     .row{
         flex-direction:column;
     }
 }
 </style>
 </head>
+
 <body>
+
 <div class="container">
+
 <div class="header">
     <h1>EV <span class="green">Giveaway 2026</span></h1>
+
     <p>Join our independent electric vehicle community giveaway experience.</p>
 </div>
+
 <div class="contact-info">
     <p>📧 Contact: your@email.com</p>
     <p>🌎 Open to eligible participants worldwide</p>
 </div>
+
 <div class="badge">
     ● FREE ENTRY
 </div>
+
 <div class="countdown">
+
 <div class="countdown-item">
 <div class="number" id="days">00</div>
 <div class="label">Days</div>
 </div>
+
 <div class="countdown-item">
 <div class="number" id="hours">00</div>
 <div class="label">Hours</div>
 </div>
+
 <div class="countdown-item">
 <div class="number" id="minutes">00</div>
 <div class="label">Minutes</div>
 </div>
+
 <div class="countdown-item">
 <div class="number" id="seconds">00</div>
 <div class="label">Seconds</div>
 </div>
+
 </div>
+
 <div class="card">
+
 <h2>Choose Your EV Preference</h2>
+
 <div class="car-grid">
+
 <div class="car-option" onclick="selectCar(this,'Urban EV')">
 <img src="IMG_0255.jpeg" alt="">
 <div class="car-name">Urban EV</div>
 <div class="car-desc">Compact electric mobility</div>
 </div>
+
 <div class="car-option" onclick="selectCar(this,'Family EV')">
 <img src="IMG_0262.jpeg" alt="">
 <div class="car-name">Family EV</div>
 <div class="car-desc">Spacious electric crossover</div>
 </div>
+
 <div class="car-option" onclick="selectCar(this,'Utility EV')">
 <img src="IMG_0267.jpeg" alt="">
 <div class="car-name">Utility EV</div>
 <div class="car-desc">Adventure-ready capability</div>
 </div>
+
 <div class="car-option" onclick="selectCar(this,'Luxury EV')">
 <img src="IMG_0270.jpeg" alt="">
 <div class="car-name">Luxury EV</div>
 <div class="car-desc">Premium electric comfort</div>
 </div>
+
 <div class="car-option" onclick="selectCar(this,'Performance EV')">
 <img src="IMG_0272.jpeg" alt="">
 <div class="car-name">Performance EV</div>
 <div class="car-desc">High-performance electric driving</div>
 </div>
+
 </div>
+
 </div>
+
 <form action="https://docs.google.com/forms/d/e/1FAIpQLSeaR1B0v5_reg7NbaBAMQTXc2ODlRPJlU0lTI9_W2QvKqlnkg/viewform"
 target="_blank"
 id="entryForm">
+
 <div class="card">
+
 <h2>Personal Information</h2>
+
 <label>Full Name *</label>
 <input type="text" required>
+
 <label>Email *</label>
 <input type="email" required>
+
 <label>Phone *</label>
 <input type="tel" required>
+
 <label>Selected EV *</label>
 <input type="text" id="selectedCar" readonly required>
+
 <label>Country *</label>
+
 <select required>
 <option value="">Choose Country</option>
 <option>United States</option>
@@ -270,31 +336,46 @@ id="entryForm">
 <option>France</option>
 <option>Other</option>
 </select>
+
 </div>
+
 <div class="card">
+
 <h2>Address</h2>
+
 <label>Street Address</label>
 <input type="text">
+
 <div class="row">
+
 <div>
 <label>City</label>
 <input type="text">
 </div>
+
 <div>
 <label>Postal Code</label>
 <input type="text">
 </div>
+
 </div>
+
 </div>
+
 <button type="submit">
 Submit Free Entry →
 </button>
+
 <div class="success" id="successMsg">
 Thank you for your entry.
 </div>
+
 </form>
+
 <div class="card">
+
 <h2>Official Rules</h2>
+
 <ul style="padding-left:20px;color:#b5b5b5;line-height:1.8;">
 <li>One entry per participant.</li>
 <li>No purchase necessary.</li>
@@ -302,42 +383,58 @@ Thank you for your entry.
 <li>Submission does not guarantee selection.</li>
 <li>Void where prohibited by law.</li>
 </ul>
+
 </div>
+
 <div class="disclaimer">
 This promotion is independently organized and is not affiliated with,
 endorsed by, sponsored by, or associated with Tesla, Hyundai, Kia,
 Nissan, or any other vehicle manufacturer.
 </div>
+
 </div>
+
 <script>
 function updateCountdown(){
     const end=new Date('December 31, 2026 23:59:59 UTC').getTime();
     const now=new Date().getTime();
+
     const diff=end-now;
+
     if(diff>0){
         document.getElementById('days').textContent=
         Math.floor(diff/(1000*60*60*24));
+
         document.getElementById('hours').textContent=
         Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+
         document.getElementById('minutes').textContent=
         Math.floor((diff%(1000*60*60))/(1000*60));
+
         document.getElementById('seconds').textContent=
         Math.floor((diff%(1000*60))/1000);
     }
 }
+
 setInterval(updateCountdown,1000);
 updateCountdown();
+
 function selectCar(element,name){
     document.querySelectorAll('.car-option')
     .forEach(card=>card.classList.remove('selected'));
+
     element.classList.add('selected');
+
     document.getElementById('selectedCar').value=name;
 }
+
 document.getElementById('entryForm')
 .addEventListener('submit',function(){
+
     document.getElementById('successMsg')
     .style.display='block';
 });
 </script>
+
 </body>
 </html>
